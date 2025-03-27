@@ -34,14 +34,15 @@
             this.rdo90 = new System.Windows.Forms.RadioButton();
             this.rdo180 = new System.Windows.Forms.RadioButton();
             this.rdo270 = new System.Windows.Forms.RadioButton();
+            this.btnInvert = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(225, 50);
+            this.pictureBox.Location = new System.Drawing.Point(271, 22);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(209, 272);
+            this.pictureBox.Size = new System.Drawing.Size(282, 360);
             this.pictureBox.TabIndex = 0;
             this.pictureBox.TabStop = false;
             // 
@@ -98,11 +99,22 @@
             this.rdo270.Text = "270 st";
             this.rdo270.UseVisualStyleBackColor = true;
             // 
+            // btnInvert
+            // 
+            this.btnInvert.Location = new System.Drawing.Point(81, 150);
+            this.btnInvert.Name = "btnInvert";
+            this.btnInvert.Size = new System.Drawing.Size(138, 33);
+            this.btnInvert.TabIndex = 6;
+            this.btnInvert.Text = "Invert Colors";
+            this.btnInvert.UseVisualStyleBackColor = true;
+            this.btnInvert.Click += new System.EventHandler(this.btnInvert_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnInvert);
             this.Controls.Add(this.rdo270);
             this.Controls.Add(this.rdo180);
             this.Controls.Add(this.rdo90);
@@ -125,6 +137,7 @@
         private System.Windows.Forms.RadioButton rdo90;
         private System.Windows.Forms.RadioButton rdo180;
         private System.Windows.Forms.RadioButton rdo270;
+        private System.Windows.Forms.Button btnInvert;
     }
 }
 
