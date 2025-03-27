@@ -57,5 +57,14 @@ namespace Edycja_obrazka
                 pictureBox.Image = bmp;
             }
         }
+
+        private void btnUpsideDown_Click(object sender, EventArgs e)
+        {
+            if (pictureBox.Image != null)
+            {
+                pictureBox.Image.RotateFlip(RotateFlipType.Rotate180FlipNone);
+                pictureBox.Refresh();
+            }
+        }
     }
 }

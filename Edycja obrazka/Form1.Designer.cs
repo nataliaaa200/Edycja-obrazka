@@ -35,6 +35,7 @@
             this.rdo180 = new System.Windows.Forms.RadioButton();
             this.rdo270 = new System.Windows.Forms.RadioButton();
             this.btnInvert = new System.Windows.Forms.Button();
+            this.btnUpsideDown = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,11 +110,22 @@
             this.btnInvert.UseVisualStyleBackColor = true;
             this.btnInvert.Click += new System.EventHandler(this.btnInvert_Click);
             // 
+            // btnUpsideDown
+            // 
+            this.btnUpsideDown.Location = new System.Drawing.Point(81, 189);
+            this.btnUpsideDown.Name = "btnUpsideDown";
+            this.btnUpsideDown.Size = new System.Drawing.Size(138, 32);
+            this.btnUpsideDown.TabIndex = 7;
+            this.btnUpsideDown.Text = "Upside Down";
+            this.btnUpsideDown.UseVisualStyleBackColor = true;
+            this.btnUpsideDown.Click += new System.EventHandler(this.btnUpsideDown_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnUpsideDown);
             this.Controls.Add(this.btnInvert);
             this.Controls.Add(this.rdo270);
             this.Controls.Add(this.rdo180);
@@ -138,6 +150,7 @@
         private System.Windows.Forms.RadioButton rdo180;
         private System.Windows.Forms.RadioButton rdo270;
         private System.Windows.Forms.Button btnInvert;
+        private System.Windows.Forms.Button btnUpsideDown;
     }
 }
 
