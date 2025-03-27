@@ -28,5 +28,17 @@ namespace Edycja_obrazka
                 pictureBox.Image = new Bitmap(openFileDialog.FileName);
             }
         }
+
+        private void btnRotate_Click(object sender, EventArgs e)
+        {
+            if (pictureBox.Image != null)
+            {
+                Image img = pictureBox.Image;
+                if (rdo90.Checked) img.RotateFlip(RotateFlipType.Rotate90FlipNone);
+                if (rdo180.Checked) img.RotateFlip(RotateFlipType.Rotate180FlipNone);
+                if (rdo270.Checked) img.RotateFlip(RotateFlipType.Rotate270FlipNone);
+                pictureBox.Refresh();
+            }
+        }
     }
 }
